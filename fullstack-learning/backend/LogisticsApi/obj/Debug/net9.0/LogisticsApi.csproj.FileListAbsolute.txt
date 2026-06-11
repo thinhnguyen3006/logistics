@@ -8,6 +8,9 @@ D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\ne
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\LogisticsApi.pdb
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\LogisticsApi.csproj.AssemblyReference.cache
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\rpswa.dswa.cache.json
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\LogisticsApi.GeneratedMSBuildEditorConfig.editorconfig
@@ -31,6 +34,3 @@ D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\ne
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\LogisticsApi.pdb
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\LogisticsApi.genruntimeconfig.cache
 D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\obj\Debug\net9.0\ref\LogisticsApi.dll
-D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\FolderForThinh\logistics\fullstack-learning\backend\LogisticsApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
