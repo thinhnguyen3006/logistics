@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using LogisticsApi.Dtos;
+using LogisticsApi.Services;
 
 namespace LogisticsApi.Controllers;
 
@@ -7,41 +8,30 @@ namespace LogisticsApi.Controllers;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    [HttpGet]
-    public IActionResult GetUsers()
+    private readonly UserService _userService;
+
+    public UserController(UserService userService)
     {
-        var users = new List<UserDto>
-        {
-            new UserDto
-            {
-                Id = 1,
-                Name = "An",
-                Age = 20
-            },
-            new UserDto
-            {
-                Id = 2,
-                Name = "Bình",
-                Age = 25
-            },
-            new UserDto
-            {
-                Id = 3,
-                Name = "Cường",
-                Age = 30
-            }
-        };
+        _userService = userService;
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetUsers(int id)
+    {
+        // Tìm User theo id và trả về kết quả
+        var users = _userService.GetUsers(id);
         return Ok(users);
     }
     [HttpPost]
     public IActionResult PostUser(CreateUserDto request)
     {
-        var users = new UserDto
+        var userDto = new UserDto
         {
-            Id = 1,
             Name = request.Name,
             Age = request.Age
         };
-        return Ok(users);
+
+        var result = _userService.AddUser(userDto);
+        return CreatedAtAction(201,result);
     }
 }

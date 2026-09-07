@@ -1,6 +1,17 @@
+using LogisticsApi.Services;
+using Microsoft.EntityFrameworkCore;
+using LogisticsApi.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<LogisticsDbContext>(options =>
+{
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+    );
+});
 builder.Services.AddControllers();
+builder.Services.AddScoped<UserService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -34,21 +45,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-// app.MapGet("api/user", () => {
-//     return new[]{
-//         new {Id = 1, Name = "An"},
-//         new {Id = 2, Name = "Binh"},
-//         new {Id = 3, Name = "Cường"}
-//     };
-// });
-// app.MapPost("/api/user", (UserRequest request) =>{
-//     return new {
-//         Message = $"Xin chào {request.Name}",
-//         Age = request.Age
-//     };
-// });
-
 app.MapControllers();
+
 app.Run();
 
 // record UserRequest(string Name, int Age);
